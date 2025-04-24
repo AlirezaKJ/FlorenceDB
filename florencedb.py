@@ -25,11 +25,3 @@ def getkey(key):
     return dbfcontent[key]
   except:
     return None
-
-
-initdb()
-print(dbfcontent)
-print(type(dbfcontent))
-changekey("temp", {"boom": 1, "boombamm": [1, 2, 3]})
-print(dbfcontent)
-print(type(dbfcontent))
