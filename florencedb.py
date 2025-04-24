@@ -20,6 +20,13 @@ def changekey(key, value):
   savedb()
 
 
+def getkey(key):
+  try:
+    return dbfcontent[key]
+  except:
+    return None
+
+
 initdb()
 print(dbfcontent)
 print(type(dbfcontent))
